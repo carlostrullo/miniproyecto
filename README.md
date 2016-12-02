@@ -26,6 +26,7 @@
 ```
 #### - Debajo de la línea que contiene el puerto 8080 agregue una igual, pero cambie el puerto por 10500 (el puerto es de libre elección).
 
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/iptables.png)
 
 #### - Una vez guardado el archivo iptables, reinicie los servicios
 ```sh
