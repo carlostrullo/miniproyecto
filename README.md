@@ -216,5 +216,7 @@ rec_list = Popen(["awk",'-F','/','{print $NF}'],stdin=elProceso.stdout, stdout=P
    
 return filter(None,rec_list)
 ```
+#### 7. Con el ambiente activado ejecute el archivo file_manage.py  y realice pruebas.
 
+// imagenes con la muestra
 
