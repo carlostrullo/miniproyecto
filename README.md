@@ -231,7 +231,7 @@ return filter(None,rec_list)
 ![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/log-console.png)
 
 
-https://github.com/carlostrullo/miniproyecto/edit/master/README.md
+https://github.com/carlostrullo/miniproyecto
 
 
 
