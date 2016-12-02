@@ -9,14 +9,14 @@
 
 #### 2. Antes de continuar con la configuración del servicio web verifique que centos 7 se encuentra instalado en virtualbox. Posterior a ello configure las interfaces de red como se muestra en la siguiente imagen:
 
-// imagen interfaces virtualbox
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/interfaz-red-1.png)
 
 #### 3. Una vez iniciada la maquina virtual el siguiente paso es ingresar a la configuración de las interfaces para lograr que estas estén activas todo el tiempo. En la línea donde dice ONBOOT=no, se cambia por ONBOOT= yes. para ingresar a la configuración de las interfaces utilice:
 
 ```sh
 # vi /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
-//interfaz2
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/interfaz-red-2.png)
 
 #### 4. -como usuario root ingrese al siguiente directorio y modifique el archivo iptables
 ```sh
@@ -24,17 +24,22 @@
 # ls
 # vi iptables
 ```
-#### - Debajo de la línea que contiene el puerto 8080 agregue una igual, pero cambie el puerto por 8088 (el puerto es de libre elección).
-// iptables
+#### - Debajo de la línea que contiene el puerto 8080 agregue una igual, pero cambie el puerto por 10500 (el puerto es de libre elección).
+
 
 #### - Una vez guardado el archivo iptables, reinicie los servicios
 ```sh
 # service iptables restart
 ```
-// interfaz 3
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/interfaz-red-3.png)
 
 #### 5. Lo siguiente será la instalación de algunas dependencias como python y los ambientes virtuales.
-//entornos 1, entornos 2.
+
+
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/entornos-1.png)
+
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/entornos-2.png)
+
 
 #### 6. En el directorio flask_env cree el archivo file_manage.py con el siguiente código
 
@@ -217,6 +222,14 @@ rec_list = Popen(["awk",'-F','/','{print $NF}'],stdin=elProceso.stdout, stdout=P
 return filter(None,rec_list)
 ```
 #### 7. Con el ambiente activado ejecute el archivo file_manage.py  y realice pruebas.
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/get-files-1.png)
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/get-recent-files-1.png)
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/post-files-1.png)
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/put-files-not-found-1.png)
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/ejecucion-servicio.png)
+![GitHub Logo](https://github.com/carlostrullo/miniproyecto/blob/master/log-console.png)
 
-// imagenes con la muestra
+
+
+
 
